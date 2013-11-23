@@ -1,0 +1,16 @@
+div(class='pull-right')
+	img(id='profile-picture', width="300", height="260",class='thumbnail pull-left small', ng-src='{{me.pictureUrl}}')
+	br
+	ul(id="plugin-btns", class=' left-margin')
+		li
+			a(href="https://twitter.com/Yuenkevon")
+				img(class='plugins', src="resources/images/twitter-bird-white-on-blue.png")
+		li
+			a(href='http://www.linkedin.com/pub/kevin-yuen/1b/2a5/877')
+				img(class="plugins", src="resources/images/LinkedIn-Logo-02.png")
+		li 
+			a(href='https://github.com/DinoCow')
+				img(class="plugins", src="resources/images/github.png")
+
+h2 {{me.name}}
+p(id="about-text", ng-bind-html-unsafe='me.description')

@@ -1,0 +1,21 @@
+span(class='large-font') {{post.title}}
+
+div(class="pull-right")
+	span {{post.date}}
+	br
+	span(class='pull-right') {{post.author}}
+
+br
+
+p(class='top-margin post-body', ng-bind-html-unsafe="post.body")
+
+hr
+
+div(id="disqus_thread")
+
+noscript
+	| Please enable JavaScript to view the
+	a(href='http://disqus.com/?ref_noscript') comments powered by Disqus.
+a.dsq-brlink(href='http://disqus.com')
+	| comments powered by
+	span.logo-disqus Disqus
